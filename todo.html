@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css" />
+    <script src="todo.js" defer></script>
+  </head>
+  <body>
+    <article class="card">
+      <div class="card__title">
+        <span></span>
+        <h1>오늘 할 일</h1>
+      </div>
+
+      <div class="card__progress">
+        <span>적어둔 일이 없어요</span>
+        <progress
+          class="prog"
+          max="100"
+          value="0"
+          class="bar-progress"
+        ></progress>
+      </div>
+
+      <div class="do">
+        <input
+          id="input_schedule"
+          type="text"
+          placeholder="할 일을 적고 Enter"
+        />
+        <button class="add">추가</button>
+      </div>
+
+      <div class="threeBtn">
+        <button>전체</button>
+        <button>남은 일</button>
+        <button>끝낸 일</button>
+      </div>
+
+      <div class="delete">
+        <span class="deleteAll">끝낸 일 지우기</span>
+      </div>
+    </article>
+  </body>
+</html>

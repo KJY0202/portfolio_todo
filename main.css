@@ -1,0 +1,74 @@
+body {
+  background-color: #fbfbfd;
+}
+
+.article {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle1 {
+  width: 500px;
+  height: 500px;
+  background-color: #f4f1fe;
+  border-radius: 50%;
+  position: absolute;
+  top: -200px;
+  left: -200px;
+}
+
+.circle2 {
+  width: 500px;
+  height: 500px;
+  background-color: #f4f1fe;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -200px;
+  right: -200px;
+}
+
+.center {
+  width: 500px;
+  height: 700px;
+  margin: 0, auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 75px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  padding: 10px;
+}
+
+.clockImage {
+  border: none;
+}
+
+.clockImage > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.link {
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #9f8dfb;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.link > a {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
