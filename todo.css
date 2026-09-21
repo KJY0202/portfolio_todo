@@ -5,8 +5,10 @@ body {
 }
 
 .card {
+  position: relative;
   width: 300px;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   padding: 20px;
   border-radius: 20px;
   display: flex;
@@ -22,11 +24,31 @@ body {
   width: 100%;
 }
 
-.do > input {
-  width: 80%;
-  padding: 5px;
+.date {
+  position: absolute;
+  font-size: 14px;
+  color: #8b94a7;
 }
 
+.do {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.do > input {
+  flex: 1;
+  height: 36px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.add {
+  width: 40px;
+  height: 36px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 13px;
+}
 .threeBtn {
   display: flex;
   flex-direction: row;
@@ -56,4 +78,57 @@ body {
   font-weight: bold;
   color: #d1d4dc;
   cursor: pointer;
+}
+
+.threeBtn > button.activate {
+  color: #000;
+  font-weight: bold;
+  background-color: white;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.description > span {
+  position: absolute;
+  font-weight: bolder;
+  top: 10px;
+  font-size: 20px;
+}
+
+.description > p {
+  position: absolute;
+  top: 20px;
+  color: #8b94a7;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.schedule {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #d1d4dc;
+}
+
+.schedule > button {
+  border: none;
+  border-radius: 5px;
+  color: red;
+  cursor: pointer;
+  opacity: 0;
+
+  background-color: oklch(91.717% 0.04244 17.819);
+}
+
+.schedule > button:hover {
+  opacity: 100;
 }

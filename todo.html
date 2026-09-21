@@ -10,18 +10,13 @@
   <body>
     <article class="card">
       <div class="card__title">
-        <span></span>
+        <span class="date"></span>
         <h1>오늘 할 일</h1>
       </div>
 
       <div class="card__progress">
         <span>적어둔 일이 없어요</span>
-        <progress
-          class="prog"
-          max="100"
-          value="0"
-          class="bar-progress"
-        ></progress>
+        <progress class="prog" max="100" value="0"></progress>
       </div>
 
       <div class="do">
@@ -34,10 +29,12 @@
       </div>
 
       <div class="threeBtn">
-        <button>전체</button>
-        <button>남은 일</button>
-        <button>끝낸 일</button>
+        <button class="btn">전체</button>
+        <button class="btn">남은 일</button>
+        <button class="btn">끝낸 일</button>
       </div>
+      <div class="description"></div>
+      <div class="list"></div>
 
       <div class="delete">
         <span class="deleteAll">끝낸 일 지우기</span>
